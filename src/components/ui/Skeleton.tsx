@@ -38,9 +38,7 @@ export function ServiceCardSkeleton() {
 }
 
 export function GalleryItemSkeleton() {
-  const heights = ["h-48", "h-64", "h-40", "h-56", "h-72", "h-44"];
-  const randomHeight = heights[Math.floor(Math.random() * heights.length)];
-  return <Skeleton className={cn("w-full", randomHeight)} />;
+  return <Skeleton className={cn("w-full h-64")} />;
 }
 
 export function TestimonialSkeleton() {

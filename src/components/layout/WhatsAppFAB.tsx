@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { BRAND } from "@/lib/constants";
@@ -9,7 +8,7 @@ import { whatsappLink } from "@/lib/utils";
 export function WhatsAppFAB({ phoneNumber }: { phoneNumber?: string }) {
   const link = whatsappLink(
     phoneNumber || BRAND.whatsapp,
-    "Hello PY Luxe! I'd like to enquire about booking an appointment. 💅"
+    "Hello PY Luxe! 💕 I'd like to make an enquiry."
   );
 
   return (
@@ -26,7 +25,6 @@ export function WhatsAppFAB({ phoneNumber }: { phoneNumber?: string }) {
       aria-label="Chat on WhatsApp"
       id="whatsapp-fab"
     >
-      {/* Pulse ring */}
       <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-30" />
       <MessageCircle className="h-6 w-6 relative z-10" />
     </motion.a>

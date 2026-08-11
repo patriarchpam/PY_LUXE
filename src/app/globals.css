@@ -4,14 +4,12 @@
 @theme {
   --font-playfair: "Playfair Display", serif;
   --font-inter: "Inter", sans-serif;
-  --color-brand-primary: #000000;
-  --color-brand-purple: #7c3aed;
-  --color-brand-purple-light: #a78bfa;
-  --color-brand-purple-dark: #4c1d95;
-  --color-brand-pink: #f8d7e8;
-  --color-brand-pink-dark: #f0a8c8;
-  --color-brand-surface: #fafafa;
-  --color-brand-text: #1a1a1a;
+  --color-brand-black: #171717;
+  --color-brand-blush: #F8E8EC;
+  --color-brand-cream: #FFF9F5;
+  --color-brand-white: #FFFFFF;
+  --color-brand-gold: #C9A227;
+  --color-brand-text: #171717;
   --color-brand-muted: #6b7280;
   --color-brand-border: #e5e7eb;
 }

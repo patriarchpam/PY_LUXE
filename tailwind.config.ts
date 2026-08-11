@@ -11,14 +11,12 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          primary: "#000000",
-          gold: "#D4AF37",
-          "gold-light": "#E8C84A",
-          "gold-dark": "#B8960A",
-          pink: "#F8D7E8",
-          "pink-dark": "#F0A8C8",
-          surface: "#FAFAFA",
-          text: "#1A1A1A",
+          black: "#171717",
+          blush: "#F8E8EC",
+          cream: "#FFF9F5",
+          white: "#FFFFFF",
+          gold: "#C9A227",
+          text: "#171717",
           muted: "#6B7280",
           border: "#E5E7EB",
         },

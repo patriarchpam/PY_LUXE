@@ -10,8 +10,6 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.7.1",
-    "@supabase/ssr": "^0.12.4",
-    "@supabase/supabase-js": "^2.112.0",
     "clsx": "^2.1.1",
     "date-fns": "^4.4.0",
     "embla-carousel-autoplay": "^8.6.0",
@@ -26,7 +24,6 @@
     "react-hot-toast": "^2.6.0",
     "react-intersection-observer": "^11.0.0",
     "recharts": "^3.10.1",
-    "resend": "^6.18.1",
     "tailwind-merge": "^3.6.0",
     "yet-another-react-lightbox": "^3.32.2",
     "zod": "^3.25.76",

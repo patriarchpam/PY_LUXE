@@ -1,233 +1,164 @@
-// ─── Brand Constants ─────────────────────────────────────────────────────────
-
 export const BRAND = {
   name: "PY Luxe",
   tagline: "Beauty. Style. Confidence.",
-  description:
-    "Premium luxury beauty destination.",
-  email: "contact@yourdomain.com",
-  phone: "+234 000 000 0000",
-  address: "Your Business Address",
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "2340000000000",
-  instagram: "https://instagram.com/",
-  tiktok: "https://tiktok.com/",
-  facebook: "https://facebook.com/",
-  url: process.env.NEXT_PUBLIC_APP_URL || "https://yourdomain.com",
+  description: "Hair, nails, makeup and henna services in Abuja.",
+  location: "Abuja, Nigeria",
+  primary_service_location: "Veritas University, Abuja",
+  whatsapp: "2347055034041",
+  display_whatsapp: "07055034041",
+  url: "https://pyluxe.com", // Adjust as necessary
 } as const;
-
-// ─── Color Palette ────────────────────────────────────────────────────────────
 
 export const COLORS = {
-  primary: "#000000",
-  secondary: "#7c3aed",
-  accent: "#F8D7E8",
-  background: "#FFFFFF",
-  surface: "#FAFAFA",
-  text: "#1A1A1A",
+  black: "#171717",
+  blush: "#F8E8EC",
+  cream: "#FFF9F5",
+  white: "#FFFFFF",
+  gold: "#C9A227",
 } as const;
-
-// ─── Services ─────────────────────────────────────────────────────────────────
-
-export const SERVICES = [
-  {
-    id: "hair",
-    slug: "hair",
-    category: "Hair",
-    name: "Hair Services",
-    description: "Please update via Admin Dashboard",
-    price: 0,
-    duration: 60,
-    icon: "✨",
-    image: "", // Placeholder empty image
-    popular: true,
-  },
-  {
-    id: "nails",
-    slug: "nails",
-    category: "Nails",
-    name: "Nail Services",
-    description: "Please update via Admin Dashboard",
-    price: 0,
-    duration: 60,
-    icon: "💅",
-    image: "",
-    popular: false,
-  },
-  {
-    id: "makeup",
-    slug: "makeup",
-    category: "Makeup",
-    name: "Makeup Services",
-    description: "Please update via Admin Dashboard",
-    price: 0,
-    duration: 60,
-    icon: "💄",
-    image: "",
-    popular: false,
-  },
-  {
-    id: "lashes",
-    slug: "lashes",
-    category: "Lashes",
-    name: "Lash Services",
-    description: "Please update via Admin Dashboard",
-    price: 0,
-    duration: 60,
-    icon: "👁️",
-    image: "",
-    popular: false,
-  },
-  {
-    id: "henna",
-    slug: "henna",
-    category: "Henna",
-    name: "Henna Services",
-    description: "Please update via Admin Dashboard",
-    price: 0,
-    duration: 60,
-    icon: "🌸",
-    image: "",
-    popular: false,
-  },
-  {
-    id: "fashion",
-    slug: "fashion",
-    category: "Fashion",
-    name: "Fashion Consultation",
-    description: "Please update via Admin Dashboard",
-    price: 0,
-    duration: 60,
-    icon: "👗",
-    image: "",
-    popular: false,
-  },
-] as const;
-
-export type Service = (typeof SERVICES)[number];
-export type ServiceCategory =
-  | "Hair"
-  | "Nails"
-  | "Makeup"
-  | "Lashes"
-  | "Henna"
-  | "Fashion";
-
-// ─── Staff ────────────────────────────────────────────────────────────────────
-
-export const STAFF = [
-  {
-    id: "staff-placeholder",
-    name: "Staff Name",
-    role: "Staff Role",
-    specialties: ["Update via Admin"],
-    image: "",
-    bio: "Update staff details via the Admin Dashboard.",
-    rating: 0,
-    reviews: 0,
-  }
-] as const;
-
-// ─── Constants ─────────────────────────────────────────────────────────────
-
-export const NIGERIAN_STATES = [
-  "Abia", "Adamawa", "Akwa Ibom", "Anambra", "Bauchi", "Bayelsa", "Benue", "Borno",
-  "Cross River", "Delta", "Ebonyi", "Edo", "Ekiti", "Enugu", "FCT - Abuja", "Gombe",
-  "Imo", "Jigawa", "Kaduna", "Kano", "Katsina", "Kebbi", "Kogi", "Kwara", "Lagos",
-  "Nasarawa", "Niger", "Ogun", "Ondo", "Osun", "Oyo", "Plateau", "Rivers", "Sokoto",
-  "Taraba", "Yobe", "Zamfara"
-];
-
-// ─── Testimonials ─────────────────────────────────────────────────────────────
-
-export type Testimonial = {
-  id: string;
-  name: string;
-  role: string;
-  text: string;
-  rating: number;
-  service: string;
-  image: string;
-};
-
-export const TESTIMONIALS: Testimonial[] = []; // Empty array, replace with dynamic reviews in Phase 3
-
-// ─── Stats ────────────────────────────────────────────────────────────────────
-
-export const STATS = [
-  { label: "Happy Clients", value: "0", icon: "❤️" },
-  { label: "Services Completed", value: "0", icon: "✨" },
-  { label: "Years of Excellence", value: "0", icon: "🏆" },
-  { label: "5-Star Reviews", value: "0", icon: "⭐" },
-] as const;
-
-// ─── FAQs ─────────────────────────────────────────────────────────────────────
-
-export const FAQS = [
-  {
-    q: "How do I book an appointment?",
-    a: "Update via Admin Dashboard.",
-  },
-  {
-    q: "Do I need to pay a deposit?",
-    a: "Update via Admin Dashboard.",
-  },
-  {
-    q: "What is your cancellation policy?",
-    a: "Update via Admin Dashboard.",
-  },
-  {
-    q: "Do you offer home service?",
-    a: "Update via Admin Dashboard.",
-  },
-] as const;
-
-// ─── Gallery Categories ────────────────────────────────────────────────────────
-
-export const GALLERY_CATEGORIES = [
-  "All",
-  "Hair",
-  "Nails",
-  "Makeup",
-  "Lashes",
-  "Henna",
-  "Fashion",
-] as const;
-
-export type GalleryCategory = (typeof GALLERY_CATEGORIES)[number];
-
-// ─── Time Slots ───────────────────────────────────────────────────────────────
-
-export const TIME_SLOTS = [
-  "09:00",
-  "09:30",
-  "10:00",
-  "10:30",
-  "11:00",
-  "11:30",
-  "12:00",
-  "12:30",
-  "13:00",
-  "13:30",
-  "14:00",
-  "14:30",
-  "15:00",
-  "15:30",
-  "16:00",
-  "16:30",
-  "17:00",
-  "17:30",
-];
-
-// ─── Payment Options ──────────────────────────────────────────────────────────
-
-export const DEPOSIT_PERCENTAGE = 0.5; // 50%
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "Gallery", href: "/gallery" },
-  { label: "Shop", href: "/shop" },
-  { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ] as const;
+
+export type ServiceCategory = "Hair" | "Nails" | "Makeup" | "Henna";
+
+export type Service = {
+  id: string;
+  category: ServiceCategory;
+  name: string;
+  description: string;
+  price: number | "Price available on request";
+  duration?: string; // e.g. "2 hours"
+  image?: string; 
+};
+
+export const SERVICES: Service[] = [
+  {
+    id: "hair-braids",
+    category: "Hair",
+    name: "Knotless Braids",
+    description: "Elegant, protective knotless braids styled to perfection.",
+    price: "Price available on request",
+    image: "/images/hair.png",
+  },
+  {
+    id: "hair-cornrows",
+    category: "Hair",
+    name: "Cornrows",
+    description: "Classic and intricate cornrow designs.",
+    price: "Price available on request",
+    image: "/images/hair.png",
+  },
+  {
+    id: "hair-wig",
+    category: "Hair",
+    name: "Wig Styling & Installation",
+    description: "Flawless wig installations and styling.",
+    price: "Price available on request",
+    image: "/images/hair.png",
+  },
+  {
+    id: "nails-acrylic",
+    category: "Nails",
+    name: "Acrylic Nails",
+    description: "Beautifully sculpted acrylic nail extensions.",
+    price: "Price available on request",
+    image: "/images/nails.png",
+  },
+  {
+    id: "nails-gel",
+    category: "Nails",
+    name: "Gel Polish",
+    description: "Long-lasting, glossy gel polish application.",
+    price: "Price available on request",
+    image: "/images/nails.png",
+  },
+  {
+    id: "nails-art",
+    category: "Nails",
+    name: "Custom Nail Art",
+    description: "Intricate, hand-painted nail designs.",
+    price: "Price available on request",
+    image: "/images/nails.png",
+  },
+  {
+    id: "makeup-soft-glam",
+    category: "Makeup",
+    name: "Soft Glam",
+    description: "Enhance your natural beauty with a flawless soft glam look.",
+    price: "Price available on request",
+    image: "/images/makeup.png",
+  },
+  {
+    id: "makeup-event-glam",
+    category: "Makeup",
+    name: "Event / Bridal Glam",
+    description: "Show-stopping makeup for your special occasions.",
+    price: "Price available on request",
+    image: "/images/makeup.png",
+  },
+  {
+    id: "henna-simple",
+    category: "Henna",
+    name: "Simple Henna Design",
+    description: "Elegant and minimal henna artistry.",
+    price: "Price available on request",
+    image: "/images/henna.png",
+  },
+  {
+    id: "henna-intricate",
+    category: "Henna",
+    name: "Intricate / Bridal Henna",
+    description: "Detailed, traditional-inspired intricate henna patterns.",
+    price: "Price available on request",
+    image: "/images/henna.png",
+  },
+];
+
+export const GALLERY_CATEGORIES = ["All", "Hair", "Nails", "Makeup", "Henna"] as const;
+export type GalleryCategory = (typeof GALLERY_CATEGORIES)[number];
+
+export type GalleryImage = {
+  id: string;
+  category: Exclude<GalleryCategory, "All">;
+  src: string;
+  alt: string;
+};
+
+// Populated with generated brand imagery
+export const GALLERY: GalleryImage[] = [
+  { id: "gal-1", category: "Hair", src: "/images/hair.png", alt: "Elegant Hair Styling" },
+  { id: "gal-2", category: "Nails", src: "/images/nails.png", alt: "Professional Nail Art" },
+  { id: "gal-3", category: "Makeup", src: "/images/makeup.png", alt: "Flawless Soft Glam Makeup" },
+  { id: "gal-4", category: "Henna", src: "/images/henna.png", alt: "Intricate Henna Design" },
+];
+
+export const FAQS = [
+  {
+    q: "Where are you located?",
+    a: "PY Luxe is based in Abuja and is available at Veritas University.",
+  },
+  {
+    q: "Do you offer home service?",
+    a: "Yes, home service is available.",
+  },
+  {
+    q: "How do I book?",
+    a: "Choose your service, fill in the booking form and continue to WhatsApp.",
+  },
+  {
+    q: "Is there a deposit?",
+    a: "Yes. A ₦1,000 deposit is required to secure your appointment.",
+  },
+  {
+    q: "How do I confirm my deposit?",
+    a: "After making your deposit, send your payment screenshot to PY Luxe on WhatsApp for verification.",
+  },
+];
+
+export const BOOKING_DEPOSIT = "₦1,000";
